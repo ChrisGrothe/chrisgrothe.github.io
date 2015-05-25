@@ -24,7 +24,7 @@ margin-top: 20vh;
 }
 
 html{
-background: linear-gradient(182deg, #465cff, #3344c4, #1c256a, #0c1453, #000000);
+background: linear-gradient(182deg, #1c256a, #0c1453, #000000);
 background-size: 800% 800%;
 
 -webkit-animation: AnimationName 36s ease infinite;
