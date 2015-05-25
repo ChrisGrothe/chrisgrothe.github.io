@@ -12,8 +12,7 @@ padding:0;
 
 h2
 {
-margin-left: auto;
-margin-right: auto;
+position: absolute;
 }
 
 hr
@@ -30,7 +29,7 @@ margin-top: 20vh;
 }
 
 html{
-background: linear-gradient(182deg, #1c256a, #0c1453, #000000);
+background: linear-gradient(182deg, #0e1971, #0c1453, #000000);
 background-size: 800% 800%;
 
 -webkit-animation: AnimationName 36s ease infinite;
