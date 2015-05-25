@@ -2,9 +2,12 @@ p,h1,li {
 color: #ffffff;
 }
 
-ul
+ul,li
 {
-    list-style-type: none;
+list-style-type: none;
+list-style-position:inside;
+margin:0;
+padding:0;
 }
 
 body {
@@ -12,7 +15,7 @@ background: none;
 }
 
 .row {
-    margin-top: 20vh;
+margin-top: 20vh;
 }
 
 html{
@@ -23,8 +26,8 @@ background-size: 800% 800%;
 -moz-animation: AnimationName 36s ease infinite;
 -o-animation: AnimationName 36s ease infinite;
 animation: AnimationName 36s ease infinite;
-    height: 100%;
-    width: 100%;
+height: 100%;
+width: 100%;
 }
 
 
