@@ -1,4 +1,4 @@
-p,h1,li,h2,h1 {
+p,h1,li,h2 {
 color: #ffffff;
 }
 
@@ -8,6 +8,15 @@ list-style-type: none;
 list-style-position:inside;
 margin:0;
 padding:0;
+}
+
+tr,td {
+    color: white;
+    text-decoration: underline;
+}
+
+.item {
+font-size: large;
 }
 
 h2
@@ -29,7 +38,7 @@ margin-top: 20vh;
 }
 
 html{
-background: linear-gradient(182deg, #0e1971, #0c1453, #000000);
+background: linear-gradient(182deg, #121848, #000000);
 background-size: 800% 800%;
 
 -webkit-animation: AnimationName 36s ease infinite;
