@@ -1,13 +1,16 @@
 p,h1,li,h2 {
 color: #ffffff;
 }
-
 ul,li
 {
 list-style-type: none;
 list-style-position:inside;
 margin:0;
 padding:0;
+}
+#right-margin {
+    float: right;
+    width: 200px;   
 }
 
 tr,td {
@@ -36,9 +39,9 @@ background: none;
 .row {
 margin-top: 20vh;
 }
-
+/* GRADIENT BACKGROUND*/
 html{
-background: linear-gradient(182deg, #121848, #000000);
+background: linear-gradient(182deg, #121848, #650202);
 background-size: 800% 800%;
 
 -webkit-animation: AnimationName 36s ease infinite;
@@ -49,6 +52,27 @@ height: 100%;
 width: 100%;
 }
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+/* PULSING NAME ANIMATION*/
 .pulse{
 	animation-name: pulse;
 	-webkit-animation-name: pulse;	
@@ -89,24 +113,147 @@ width: 100%;
 		opacity: 0.7;	
 	}			
 }
+/*ANIMATED SPEAKER*/
+/*DEFAULT STYLES FOR DISPLAY*/
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+
+html,
+body {
+  height: 100%
 }
-@-o-keyframes AnimationName {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  background: #3dc0f1;
 }
-@keyframes AnimationName { 
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+}
+/*THE ARTIFAKT ;) */
+
+.speaker {
+  width: 0;
+  height: 0;
+  background: none;
+  border-top: 4em solid transparent;
+  border-bottom: 4em solid transparent;
+  border-right: 5em solid #fff;
+}
+
+.speaker:before {
+  content: "";
+  position: absolute;
+  top: -1.3em;
+  left: 0;
+  width: 5.8em;
+  height: 2.5em;
+  background: #fff;
+  border-radius: 3px 1.5em 1.5em 3px;
+}
+
+.speaker:after {
+  content: "";
+  position: absolute;
+  border-right: 0.5em solid #fff;
+  border-radius: 50%;
+  /*animation*/
+  
+  -webkit-animation: pump 0.1s 0.1s infinite alternate;
+  -moz-animation: pump 0.1s 0.1s infinite alternate;
+  -ms-animation: pump 0.1s 0.1s infinite alternate;
+  -o-animation: pump 0.1s 0.1s infinite alternate;
+  animation: pump 0.1s 0.1s infinite alternate;
+}
+
+@-webkit-keyframes pump {
+  from {
+    top: -1.4em;
+    right: -7em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  to {
+    top: -1.8em;
+    right: -8em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+
+@-moz-keyframes pump {
+  from {
+    top: -1.4em;
+    right: -7em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  to {
+    top: -1.8em;
+    right: -8em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+
+@-ms-keyframes pump {
+  from {
+    top: -1.4em;
+    right: -7em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  to {
+    top: -1.8em;
+    right: -8em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+
+@-o-keyframes pump {
+  from {
+    top: -1.4em;
+    right: -7em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  to {
+    top: -1.8em;
+    right: -8em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+
+@keyframes pump {
+  from {
+    top: -1.4em;
+    right: -7em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  to {
+    top: -1.8em;
+    right: -8em;
+    width: 3.5em;
+    height: 3.5em;
+  }
 }
